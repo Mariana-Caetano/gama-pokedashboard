@@ -1,10 +1,18 @@
 import React from 'react';
+import axios from 'axios';
 
-const Dashboard = () => {
-  return <div>  
-    <h1></h1>
-  </div>;
-};
+function Dashboard() {
+
+const retorno = axios.get('https://pokeapi.co/api/v2/pokemon?limit=50')
+return (
+  <>
+  <div>
+
+  </div>
+  </>
+)
+  
 
 
+}
 export default Dashboard;
